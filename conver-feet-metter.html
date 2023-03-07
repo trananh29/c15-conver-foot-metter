@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>foot to metter</label>
+<input type="number" id="num1" placeholder="Nhap foot" oninput="footMetter(this.value)">
+<p Ket qua></p> <span id="result1"></span>
+<label> metter to foot</label>
+<input type="number" id="num2" placeholder="nhap metter" oninput="metterFoot(this.value)">
+<p Ket qua></p> <span id="result2"></span>
+<script>
+  function footMetter (x) {
+    let y= parseFloat(x)
+    return document.getElementById('result1').innerHTML=3.279*y + "metter" + '<br>';
+  }
+  function metterFoot(x) {
+      let y=parseFloat(x);
+    return  document.getElementById('result2').innerHTML=0.305*y + "footer" + '<br>';
+  }
+</script>
+</body>
+</html>
